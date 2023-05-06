@@ -1,0 +1,520 @@
+<?xml version="1.0" ?>
+<robot name="UR5" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find UR5_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find UR5_description)/urdf/UR5.trans" />
+<xacro:include filename="$(find UR5_description)/urdf/UR5.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.20565205578674411 -0.1410621224509725 0.4138858082116097" rpy="0 0 0"/>
+    <mass value="66.09871047895689"/>
+    <inertia ixx="5.599647" iyy="5.599647" izz="0.17936" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://UR5_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://UR5_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Size_3_Round_base_r02_Simple_1__1">
+  <inertial>
+    <origin xyz="-0.0005290027735406488 -0.0005608217254704784 0.010876236303264286" rpy="0 0 0"/>
+    <mass value="2.7366001723138234"/>
+    <inertia ixx="0.003477" iyy="0.003476" izz="0.00671" ixy="-0.000114" iyz="-4e-06" ixz="-3e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.205652 0.141062 -0.915" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://UR5_description/meshes/Size_3_Round_base_r02_Simple_1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.205652 0.141062 -0.915" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://UR5_description/meshes/Size_3_Round_base_r02_Simple_1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Size_3_House_r11_Simple_1__1">
+  <inertial>
+    <origin xyz="6.470702004768292e-08 0.012224287223825625 0.05706064221736162" rpy="0 0 0"/>
+    <mass value="1.3462851721503617"/>
+    <inertia ixx="0.002714" iyy="0.002729" izz="0.00244" ixy="0.0" iyz="-0.000368" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.205652 0.141062 -0.939" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://UR5_description/meshes/Size_3_House_r11_Simple_1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.205652 0.141062 -0.939" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://UR5_description/meshes/Size_3_House_r11_Simple_1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Size_3_Joint_lid_r06_Simple_1__1">
+  <inertial>
+    <origin xyz="2.2943852170942414e-07 -0.010507477128422621 0.00939693141211495" rpy="0 0 0"/>
+    <mass value="0.3031077981852102"/>
+    <inertia ixx="0.000269" iyy="0.00047" izz="0.000296" ixy="0.0" iyz="-7e-05" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.205652 0.174671 -1.009504" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://UR5_description/meshes/Size_3_Joint_lid_r06_Simple_1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.205652 0.174671 -1.009504" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://UR5_description/meshes/Size_3_Joint_lid_r06_Simple_1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Size_3_House_r11_Simple_1__2">
+  <inertial>
+    <origin xyz="6.470702004768292e-08 0.05297546787425572 0.013440300362984603" rpy="0 0 0"/>
+    <mass value="1.3462851721503617"/>
+    <inertia ixx="0.002714" iyy="0.002729" izz="0.00244" ixy="-0.0" iyz="-0.000368" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.205652 0.075862 -1.0095" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://UR5_description/meshes/Size_3_House_r11_Simple_1__2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.205652 0.075862 -1.0095" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://UR5_description/meshes/Size_3_House_r11_Simple_1__2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Size_3_Joint_lid_r06_Simple_1__2">
+  <inertial>
+    <origin xyz="-1.0095010779138955 0.24977008154174604 -0.1840689923057739" rpy="0 0 0"/>
+    <mass value="0.3031077981852102"/>
+    <inertia ixx="0.000269" iyy="0.00047" izz="0.000296" ixy="-0.0" iyz="-7e-05" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-1.215153 0.216314 -1.184173" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://UR5_description/meshes/Size_3_Joint_lid_r06_Simple_1__2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-1.215153 0.216314 -1.184173" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://UR5_description/meshes/Size_3_Joint_lid_r06_Simple_1__2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Size_3_Over_arm_r01_Simple_1__1">
+  <inertial>
+    <origin xyz="-0.9390009442132564 0.20565187754904585 0.07143747129018219" rpy="0 0 0"/>
+    <mass value="2.4182043350060805"/>
+    <inertia ixx="0.018313" iyy="0.018313" izz="0.003104" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-1.144653 0.216314 -1.150563" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://UR5_description/meshes/Size_3_Over_arm_r01_Simple_1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-1.144653 0.216314 -1.150563" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://UR5_description/meshes/Size_3_Over_arm_r01_Simple_1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Size_3_House_r11_Simple_1__3">
+  <inertial>
+    <origin xyz="1.364000046866467 -0.022886532125734705 0.40471264221735925" rpy="0 0 0"/>
+    <mass value="1.3462851721503617"/>
+    <inertia ixx="0.002714" iyy="0.002729" izz="0.00244" ixy="0.0" iyz="0.000368" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="1.158348 0.0 -1.016348" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://UR5_description/meshes/Size_3_House_r11_Simple_1__3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="1.158348 0.0 -1.016348" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://UR5_description/meshes/Size_3_House_r11_Simple_1__3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Size_3_Joint_lid_r06_Simple_1__3">
+  <inertial>
+    <origin xyz="1.009500189487383 0.24977008154175712 0.1840689348861151" rpy="0 0 0"/>
+    <mass value="0.3031077981852102"/>
+    <inertia ixx="0.000269" iyy="0.00047" izz="0.000296" ixy="0.0" iyz="7e-05" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.803848 0.216314 -1.259828" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://UR5_description/meshes/Size_3_Joint_lid_r06_Simple_1__3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.803848 0.216314 -1.259828" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://UR5_description/meshes/Size_3_Joint_lid_r06_Simple_1__3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Size_3_to_Size_1_Angle_r02_Simple_1__1">
+  <inertial>
+    <origin xyz="1.022556821714739 0.10222860784964934 0.0758635667154568" rpy="0 0 0"/>
+    <mass value="0.846305861812186"/>
+    <inertia ixx="0.001016" iyy="0.001447" izz="0.001354" ixy="0.000221" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.803848 0.216314 -1.358638" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://UR5_description/meshes/Size_3_to_Size_1_Angle_r02_Simple_1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.803848 0.216314 -1.358638" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://UR5_description/meshes/Size_3_to_Size_1_Angle_r02_Simple_1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Size_1_r_X2_FFFD_X0_r_r01_Simple_1__1">
+  <inertial>
+    <origin xyz="0.136465055786743 -1.2245094882512575e-07 4.7129017399782924e-07" rpy="0 0 0"/>
+    <mass value="1.278113872388791"/>
+    <inertia ixx="0.000899" iyy="0.008383" izz="0.008383" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.279652 0.130362 -1.4345" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://UR5_description/meshes/Size_1_r_X2_FFFD_X0_r_r01_Simple_1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.279652 0.130362 -1.4345" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://UR5_description/meshes/Size_1_r_X2_FFFD_X0_r_r01_Simple_1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Size_1_House_r13_Simple_1__1">
+  <inertial>
+    <origin xyz="0.0381732974986706 -1.9117182858963133e-07 -0.009736825636601276" rpy="0 0 0"/>
+    <mass value="0.39880415398025154"/>
+    <inertia ixx="0.000327" iyy="0.000365" izz="0.00034" ixy="-0.0" iyz="-0.0" ixz="4.9e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.552582 0.130362 -1.4345" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://UR5_description/meshes/Size_1_House_r13_Simple_1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.552582 0.130362 -1.4345" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://UR5_description/meshes/Size_1_House_r13_Simple_1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Size_1_Joint_lid_r07_Simple_1__2">
+  <inertial>
+    <origin xyz="0.6031609239852967 -1.4574584290554307 0.16844504420776474" rpy="0 0 0"/>
+    <mass value="0.153250240299275"/>
+    <inertia ixx="7.2e-05" iyy="6.9e-05" izz="0.000102" ixy="-0.0" iyz="-0.0" ixz="1.3e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="4e-06 -1.327091 -1.304133" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://UR5_description/meshes/Size_1_Joint_lid_r07_Simple_1__2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="4e-06 -1.327091 -1.304133" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://UR5_description/meshes/Size_1_Joint_lid_r07_Simple_1__2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Size_1_House_r13_Simple_1__2">
+  <inertial>
+    <origin xyz="0.6088193527135184 -1.3870000537300708 0.04468922957824617" rpy="0 0 0"/>
+    <mass value="0.39880415398025154"/>
+    <inertia ixx="0.00034" iyy="0.000365" izz="0.000327" ixy="-0.0" iyz="-0.0" ixz="4.9e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -1.256638 -1.304138" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://UR5_description/meshes/Size_1_House_r13_Simple_1__2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -1.256638 -1.304138" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://UR5_description/meshes/Size_1_House_r13_Simple_1__2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Size_1_Joint_lid_r07_Simple_1__1">
+  <inertial>
+    <origin xyz="-0.1684455171308472 1.457458184153533 -0.6031603969083799" rpy="0 0 0"/>
+    <mass value="0.153250240299275"/>
+    <inertia ixx="0.000102" iyy="6.9e-05" izz="7.2e-05" ixy="-0.0" iyz="-0.0" ixz="1.3e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.72945 1.587815 -1.939586" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://UR5_description/meshes/Size_1_Joint_lid_r07_Simple_1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.72945 1.587815 -1.939586" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://UR5_description/meshes/Size_1_Joint_lid_r07_Simple_1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Size_1_House_r13_Simple_1__3">
+  <inertial>
+    <origin xyz="-0.044688702501329614 1.3772635806222737 -0.5990824599889455" rpy="0 0 0"/>
+    <mass value="0.39880415398025154"/>
+    <inertia ixx="0.000327" iyy="0.00034" izz="0.000365" ixy="4.9e-05" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.729444 1.517363 -1.939583" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://UR5_description/meshes/Size_1_House_r13_Simple_1__3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.729444 1.517363 -1.939583" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://UR5_description/meshes/Size_1_House_r13_Simple_1__3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Size_1_Joint_lid_r07_Simple_1__3">
+  <inertial>
+    <origin xyz="0.6031533520245856 0.1684410221293524 1.4574544510589655" rpy="0 0 0"/>
+    <mass value="0.153250240299275"/>
+    <inertia ixx="7.2e-05" iyy="0.000102" izz="6.9e-05" ixy="1.3e-05" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.094 0.260724 0.116954" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://UR5_description/meshes/Size_1_Joint_lid_r07_Simple_1__3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.094 0.260724 0.116954" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://UR5_description/meshes/Size_1_Joint_lid_r07_Simple_1__3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Size_1_Tool_flange_r03_Simple_1__1">
+  <inertial>
+    <origin xyz="0.6007690809345925 0.06705651691710188 1.3870004712901434" rpy="0 0 0"/>
+    <mass value="0.15979947347240137"/>
+    <inertia ixx="6.4e-05" iyy="0.000109" izz="7.1e-05" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.094 0.260724 0.0465" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://UR5_description/meshes/Size_1_Tool_flange_r03_Simple_1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.094 0.260724 0.0465" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://UR5_description/meshes/Size_1_Tool_flange_r03_Simple_1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="M13538-03-M01-603_Shaft_1__1">
+  <inertial>
+    <origin xyz="5.578670936312591e-08 0.023972018336047368 4.712905790071886e-07" rpy="0 0 0"/>
+    <mass value="0.19941706920012378"/>
+    <inertia ixx="0.000148" iyy="0.00021" izz="0.000132" ixy="0.0" iyz="-0.0" ixz="1.4e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.693082 0.206362 -1.3405" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://UR5_description/meshes/M13538-03-M01-603_Shaft_1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.693082 0.206362 -1.3405" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://UR5_description/meshes/M13538-03-M01-603_Shaft_1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Rigid 1" type="fixed">
+  <origin xyz="0.205652 -0.141062 0.915" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Size_3_Round_base_r02_Simple_1__1"/>
+</joint>
+
+<joint name="Rigid 2" type="fixed">
+  <origin xyz="0.0 0.0 0.024" rpy="0 0 0"/>
+  <parent link="Size_3_Round_base_r02_Simple_1__1"/>
+  <child link="Size_3_House_r11_Simple_1__1"/>
+</joint>
+
+<joint name="Rigid 3" type="fixed">
+  <origin xyz="0.0 -0.033609 0.070504" rpy="0 0 0"/>
+  <parent link="Size_3_House_r11_Simple_1__1"/>
+  <child link="Size_3_Joint_lid_r06_Simple_1__1"/>
+</joint>
+
+<joint name="Revolute 4" type="revolute">
+  <origin xyz="0.0 0.0652 0.0705" rpy="0 0 0"/>
+  <parent link="Size_3_House_r11_Simple_1__1"/>
+  <child link="Size_3_House_r11_Simple_1__2"/>
+  <axis xyz="0.0 1.0 -0.0"/>
+  <limit upper="1.570796" lower="-1.570796" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Rigid 5" type="fixed">
+  <origin xyz="1.009501 -0.140452 0.174673" rpy="0 0 0"/>
+  <parent link="Size_3_House_r11_Simple_1__2"/>
+  <child link="Size_3_Joint_lid_r06_Simple_1__2"/>
+</joint>
+
+<joint name="Rigid 6" type="fixed">
+  <origin xyz="0.939001 -0.140452 0.141063" rpy="0 0 0"/>
+  <parent link="Size_3_House_r11_Simple_1__2"/>
+  <child link="Size_3_Over_arm_r01_Simple_1__1"/>
+</joint>
+
+<joint name="Rigid 7" type="fixed">
+  <origin xyz="-2.303001 0.216314 -0.134215" rpy="0 0 0"/>
+  <parent link="Size_3_Over_arm_r01_Simple_1__1"/>
+  <child link="Size_3_House_r11_Simple_1__3"/>
+</joint>
+
+<joint name="Rigid 8" type="fixed">
+  <origin xyz="0.3545 -0.216314 0.24348" rpy="0 0 0"/>
+  <parent link="Size_3_House_r11_Simple_1__3"/>
+  <child link="Size_3_Joint_lid_r06_Simple_1__3"/>
+</joint>
+
+<joint name="Revolute 9" type="revolute">
+  <origin xyz="0.3545 -0.216314 0.34229" rpy="0 0 0"/>
+  <parent link="Size_3_House_r11_Simple_1__3"/>
+  <child link="Size_3_to_Size_1_Angle_r02_Simple_1__1"/>
+  <axis xyz="-0.0 -1.0 0.0"/>
+  <limit upper="3.141593" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Rigid 10" type="fixed">
+  <origin xyz="1.0835 0.085952 0.075862" rpy="0 0 0"/>
+  <parent link="Size_3_to_Size_1_Angle_r02_Simple_1__1"/>
+  <child link="Size_1_r_X2_FFFD_X0_r_r01_Simple_1__1"/>
+</joint>
+
+<joint name="Rigid 11" type="fixed">
+  <origin xyz="0.27293 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Size_1_r_X2_FFFD_X0_r_r01_Simple_1__1"/>
+  <child link="Size_1_House_r13_Simple_1__1"/>
+</joint>
+
+<joint name="Rigid 12" type="fixed">
+  <origin xyz="-0.552586 1.457453 -0.130367" rpy="0 0 0"/>
+  <parent link="Size_1_House_r13_Simple_1__1"/>
+  <child link="Size_1_Joint_lid_r07_Simple_1__2"/>
+</joint>
+
+<joint name="Revolute 13" type="continuous">
+  <origin xyz="-0.552582 1.387 -0.130362" rpy="0 0 0"/>
+  <parent link="Size_1_House_r13_Simple_1__1"/>
+  <child link="Size_1_House_r13_Simple_1__2"/>
+  <axis xyz="-0.0 -0.0 -1.0"/>
+</joint>
+
+<joint name="Rigid 14" type="fixed">
+  <origin xyz="0.72945 -2.844453 0.635448" rpy="0 0 0"/>
+  <parent link="Size_1_House_r13_Simple_1__2"/>
+  <child link="Size_1_Joint_lid_r07_Simple_1__1"/>
+</joint>
+
+<joint name="Revolute 15" type="continuous">
+  <origin xyz="0.729444 -2.774001 0.635445" rpy="0 0 0"/>
+  <parent link="Size_1_House_r13_Simple_1__2"/>
+  <child link="Size_1_House_r13_Simple_1__3"/>
+  <axis xyz="1.0 0.0 0.0"/>
+</joint>
+
+<joint name="Rigid 16" type="fixed">
+  <origin xyz="-0.635444 1.256639 -2.056537" rpy="0 0 0"/>
+  <parent link="Size_1_House_r13_Simple_1__3"/>
+  <child link="Size_1_Joint_lid_r07_Simple_1__3"/>
+</joint>
+
+<joint name="Rigid 17" type="fixed">
+  <origin xyz="-0.635444 1.256639 -1.986083" rpy="0 0 0"/>
+  <parent link="Size_1_House_r13_Simple_1__3"/>
+  <child link="Size_1_Tool_flange_r03_Simple_1__1"/>
+</joint>
+
+<joint name="Rigid 18" type="fixed">
+  <origin xyz="0.599082 0.054362 1.387" rpy="0 0 0"/>
+  <parent link="Size_1_Tool_flange_r03_Simple_1__1"/>
+  <child link="M13538-03-M01-603_Shaft_1__1"/>
+</joint>
+
+</robot>
